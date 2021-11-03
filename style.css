@@ -95,4 +95,63 @@ body {
 .attribution a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    max-width: 74rem;
+    height: 29.53rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 0;
+  }
+  .card .main-picture {
+    width: 48%;
+    height: 100%;
+  }
+  .card .details-area {
+    width: 52%;
+    padding: 4.8rem 8.13vw 4.33rem 4.8rem;
+    text-align: left;
+    gap: 1.55rem;
+  }
+  .card .details-area h1 {
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+  }
+  .card .details-area p {
+    line-height: 1.7em;
+  }
+  .card .details-area .statistics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4.2rem;
+    padding-top: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .card .details-area {
+    padding: 4.8rem 8.13rem 4.33rem 4.8rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
